@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "Lato";
+    src: url(Lato2OFL/Lato-Light.ttf) format('truetype');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(Lato2OFL/Lato-Regular.ttf) format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url(Lato2OFL/Lato-Medium.ttf) format('truetype');
+    font-weight: 300;
+}
+
+body {
+    background: #ffffff;
+    margin: 0;
+    font-family: "Lato";
+}
+
+#page {
+    margin-top: 100px;
+    max-width: 500px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header#page-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-image: url(images/wave-01.svg);
+    background-size: auto 100%;
+    text-align: center; 
+
+}
+
+nav#main-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+nav#main-menu .menu-item {
+    text-decoration: none;
+    font-family: "Lato";
+    font-weight: normal;
+    font-size: 15px;
+}
+
+nav#main-menu .menu-item,
+nav#main-menu #menu-logo {
+    padding: 40px;
+}
+
+.menu-item:hover {
+    color: #F49819;
+}
+
+.header-section {
+    width: 100%;
+    height: 500px;
+    background-image: url(images/daniel-hjalmarsson-376627-unsplash.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-header {
+    font-family: "Lato";
+    font-weight: 100;
+    font-size: 30px;
+    background: rgba(255, 255, 255, 0.75);
+}
+
+.section-title h2 {
+    font-weight: 100;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.circle-item {
+    border-radius: 65px;
+    height: 130px;
+    width: 130px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle-item:hover {
+    background: none;
+}
+
+.product-grid {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.product-item {
+    width: 33.3%;
+    padding: 30px 0 30px 0;
+}
+
+.product-text {
+    padding: 0 30px 0 30px;
+}
+
+.product-name {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.product-info {
+    font-family: "Lato";
+    font-size: 15px;
+    font-weight: 100;
+}
+
+.product-price {
+    font-family: "Lato";
+    font-size: 20px;
+    font-weight: 300;
+}
+.bg-light-pink {
+    background: #F9CBCC;
+}
+
+.bg-medium-pink {
+    background: #F29699;
+}
+
+.bg-dark-pink {
+    background: #EC6568;
+}
+
+.bg-light-orange {
+    background: #FBCB9A;
+}
+
+.bg-medium-orange {
+    background: #FDCC68;
+}
+
+.bg-dark-orange {
+    background: #F49819;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Lato";
+    font-weight: 300;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Lato";
+    font-weight: 100;
+    font-size: 15px; 
+}
+
+.full-width {
+    width: 100%;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.padded {
+    padding: 0px 10px;
+}
+
+fieldset {
+    border: 2px solid #F9D5B4;
+    padding: 20px 30px;
+    background: #ffffff;
+    margin-bottom: 20px; 
+}
+
+.primary-button {
+    border: 2px solid #F9CBCC;
+    border-radius: 10px;
+}
+
+.primary-button:hover {
+    background: #F49819;
+    border-radius: 10px;
+    border: 2px solid #F9CBCC;
+    height: 20px;
+    color: #ffffff;
+}
+
+#page-footer {
+    background: #FBCB9A;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px 0 0 0;
+    font-family: "Lato";
+    font-weight: 100;
+    padding: 30px 0px;
+}    
+
+.footer-item {
+    width: 33.33%;
+    text-align: center;
+}
+
+/* pushing the page down*/
+#page-main {
+    margin-top: 100px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 600px) {
+
+    .product-item {
+        width: 100%;
+        padding: 50px 30px;
+    }
+
+    .footer-item {
+        width: 100%;
+        padding: 50px 30px;
+
+    }
+
+}
